@@ -33,7 +33,11 @@ const Read = () => {
         <thead>
           <tr>
             <th className="py-2">ID</th>
-            <th className="py-2">Name</th>
+            <th className="py-2">Nama</th>
+            <th className="py-2">Email</th>
+            <th className="py-2">No HandPhone</th>
+            <th className="py-2">Level</th>
+            <th className="py-2">Jabatan</th>
             <th className="py-2">Actions</th>
           </tr>
         </thead>
@@ -41,7 +45,11 @@ const Read = () => {
           {items.map((item) => (
             <tr key={item.id}>
               <td className="py-2">{item.id}</td>
-              <td className="py-2">{item.username}</td>
+              <td className="py-2">{item.nama}</td>
+              <td className="py-2">{item.email}</td>
+              <td className="py-2">{item.no_hp_pengguna}</td>
+              <td className="py-2">{item.level}</td>
+              <td className="py-2">{item.jabatan}</td>
               <td className="py-2">
                 <button
                   onClick={() => handleDelete(item.id)}
